@@ -1,1 +1,10 @@
-<p>contact works!</p>
+<div class="contact">
+    <div class="main-content">
+        <p class="contact-title">name: {{ contact.name }} {{ contact.lastName || '' }}</p>
+        <p class="contact-phone">phone number: {{ contact.phoneNumber }}</p>
+    </div>
+    
+    <div class="actions">
+        <ng-container *ngTemplateOutlet="contactActions"></ng-container>
+    </div>
+</div>

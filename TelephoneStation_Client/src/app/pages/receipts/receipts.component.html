@@ -1,1 +1,13 @@
-<p>receipts works!</p>
+<div class="receipts">
+    <div class="tool-bar">
+        <p class="tool-item" (click)="showAllReceipts()">All</p>
+        <p class="tool-item" (click)="showUnbought()">Unbought</p>
+    </div>
+    <div class="receipts-list">
+        <app-receipt *ngFor="let receipt of receipts" [receipt]="receipt">
+            <ng-template #receiptActions>
+                <p class="pay-btn" *ngIf="receipt.isBought" (click)="payForReceipt(receipt.id)">Pay</p>
+            </ng-template>
+        </app-receipt>
+    </div>
+</div>

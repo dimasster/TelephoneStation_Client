@@ -1,1 +1,19 @@
-<p>phone-book works!</p>
+<div class="phone-book">
+    <div class="tool-bar">
+        <p class="tool-item" (click)="showAllUsers()">All</p>
+        <p class="tool-item" (click)="showSavedUsers()">Saved</p>
+        <p class="tool-item" (click)="showCallHistory()">History</p>
+    </div>
+    <div *ngIf="onContacts" class="contacts-list">
+        <app-contact *ngFor="let contact of users" [contact]="contact">
+            <ng-template #contactActions>
+                <p class="call-btn" (click)="callToUser(contact.id)">Call</p>
+                <p class="save-btn" (click)="saveUser(contact.id)">Save</p>
+            </ng-template>
+        </app-contact>
+    </div>
+    <div *ngIf="!onContacts" class="calls-list">
+        <app-call-item *ngFor="let call of calls" [call]="call">
+        </app-call-item>
+    </div>
+</div>

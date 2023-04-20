@@ -1,1 +1,15 @@
-<p>service works!</p>
+<div class="service">
+    <div class="main-content">
+        <p class="service-type">title: {{service.title}}</p>
+        <p class="service-sub-cost">subscription cost: {{service.subscriptionCost}}₴</p>
+    </div>
+    
+    <div class="additional-content">
+        <p class="service-min-cost">cost per minute: {{service.costPerMinute}}₴</p>
+        <p class="service-free-mins">free minutes: {{service.freeMinutes}}m</p>
+    </div>
+
+    <div class="actions">
+        <ng-container *ngTemplateOutlet="serviceActions"></ng-container>
+    </div>
+</div>

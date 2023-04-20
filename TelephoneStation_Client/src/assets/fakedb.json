@@ -1,0 +1,1188 @@
+{
+  "db": {
+    "Users": [
+      {
+        "id": 1,
+        "name": "John",
+        "lastName": null,
+        "phoneNumber": 123456789,
+        "role": 1,
+        "isBanned": false,
+        "ballance": 0
+      },
+      {
+        "id": 2,
+        "name": "Sarah",
+        "lastName": "Smith",
+        "phoneNumber": 234567890,
+        "role": 1,
+        "isBanned": false,
+        "ballance": 0
+      },
+      {
+        "id": 3,
+        "name": "Alex",
+        "lastName": null,
+        "phoneNumber": 345678901,
+        "role": 1,
+        "isBanned": false,
+        "ballance": 0
+      },
+      {
+        "id": 4,
+        "name": "Mike",
+        "lastName": null,
+        "phoneNumber": 456789012,
+        "role": 1,
+        "isBanned": false,
+        "ballance": 0
+      },
+      {
+        "id": 5,
+        "name": "Emily",
+        "lastName": null,
+        "phoneNumber": 567890123,
+        "role": 1,
+        "isBanned": false,
+        "ballance": 0
+      },
+      {
+        "id": 6,
+        "name": "Admin",
+        "lastName": null,
+        "phoneNumber": 678901234,
+        "role": 2,
+        "isBanned": false,
+        "ballance": 0
+      }
+    ],
+    "Services": [
+      {
+        "id": 1,
+        "title": "Service 1",
+        "subscriptionCost": 9.99,
+        "costPerMinute": 0.1,
+        "freeMinutes": 0
+      },
+      {
+        "id": 2,
+        "title": "Service 2",
+        "subscriptionCost": 14.99,
+        "costPerMinute": 0.05,
+        "freeMinutes": 10
+      },
+      {
+        "id": 3,
+        "title": "Service 3",
+        "subscriptionCost": 19.99,
+        "costPerMinute": 0.2,
+        "freeMinutes": 10
+      },
+      {
+        "id": 4,
+        "title": "Service 4",
+        "subscriptionCost": 24.99,
+        "costPerMinute": 0.15,
+        "freeMinutes": 20
+      },
+      {
+        "id": 5,
+        "title": "Service 5",
+        "subscriptionCost": 29.99,
+        "costPerMinute": 0.25,
+        "freeMinutes": 20
+      },
+      {
+        "id": 6,
+        "title": "Service 6",
+        "subscriptionCost": 39.99,
+        "costPerMinute": 0.2,
+        "freeMinutes": 30
+      }
+    ],
+    "Subscriptions": [
+      {
+        "Id": 1,
+        "UserId": 1,
+        "ServiceId": 1,
+        "SubscriptionStartDate": "2023-04-07 15:47:40.4284465",
+        "SubscriptionEndDate": "2023-05-18 15:47:40.4284467",
+        "MinuteOfUsage": 386
+      },
+      {
+        "Id": 2,
+        "UserId": 2,
+        "ServiceId": 2,
+        "SubscriptionStartDate": "2023-03-30 15:47:40.4284496",
+        "SubscriptionEndDate": "2023-05-18 15:47:40.4284498",
+        "MinuteOfUsage": 527
+      },
+      {
+        "Id": 3,
+        "UserId": 3,
+        "ServiceId": 3,
+        "SubscriptionStartDate": "2023-04-06 15:47:40.4284517",
+        "SubscriptionEndDate": "2023-05-18 15:47:40.4284519",
+        "MinuteOfUsage": 185
+      },
+      {
+        "Id": 4,
+        "UserId": 4,
+        "ServiceId": 4,
+        "SubscriptionStartDate": "2023-04-15 15:47:40.4284537",
+        "SubscriptionEndDate": "2023-05-18 15:47:40.4284539",
+        "MinuteOfUsage": 199
+      },
+      {
+        "Id": 5,
+        "UserId": 5,
+        "ServiceId": 5,
+        "SubscriptionStartDate": "2023-04-07 15:47:40.4284557",
+        "SubscriptionEndDate": "2023-05-18 15:47:40.4284558",
+        "MinuteOfUsage": 345
+      },
+      {
+        "Id": 6,
+        "UserId": 6,
+        "ServiceId": 6,
+        "SubscriptionStartDate": "2023-04-06 15:47:40.4284578",
+        "SubscriptionEndDate": "2023-05-18 15:47:40.4284579",
+        "MinuteOfUsage": 488
+      }
+    ],
+    "SavedUsers": [
+      {
+        "UserId": 2,
+        "TargetId": 1
+      },
+      {
+        "UserId": 4,
+        "TargetId": 1
+      },
+      {
+        "UserId": 1,
+        "TargetId": 2
+      },
+      {
+        "UserId": 3,
+        "TargetId": 2
+      },
+      {
+        "UserId": 1,
+        "TargetId": 3
+      }
+    ],
+    "Receipts": [
+      {
+        "id": 1,
+        "date": "2023-04-18T15:47:40.4283933",
+        "price": 1.5798,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "1"
+      },
+      {
+        "id": 2,
+        "date": "2023-04-18T15:47:40.4283956",
+        "price": 0.3651,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "2"
+      },
+      {
+        "id": 3,
+        "date": "2023-04-18T15:47:40.4283971",
+        "price": 2.5622,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "3"
+      },
+      {
+        "id": 4,
+        "date": "2023-04-18T15:47:40.4283986",
+        "price": 1.5368,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "4"
+      },
+      {
+        "id": 5,
+        "date": "2023-04-18T15:47:40.4284002",
+        "price": 3.3179,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "5"
+      },
+      {
+        "id": 6,
+        "date": "2023-04-18T15:47:40.4284017",
+        "price": 3.3851,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "6"
+      },
+      {
+        "id": 7,
+        "date": "2023-04-18T15:47:40.4284032",
+        "price": 2.0407,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "7"
+      },
+      {
+        "id": 8,
+        "date": "2023-04-18T15:47:40.4284046",
+        "price": 0.1461,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "8"
+      },
+      {
+        "id": 9,
+        "date": "2023-04-18T15:47:40.4284061",
+        "price": 3.3613,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "9"
+      },
+      {
+        "id": 10,
+        "date": "2023-04-18T15:47:40.4284108",
+        "price": 4.8883,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "10"
+      },
+      {
+        "id": 11,
+        "date": "2023-04-18T15:47:40.4284124",
+        "price": 4.3478,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "11"
+      },
+      {
+        "id": 12,
+        "date": "2023-04-18T15:47:40.4284139",
+        "price": 3.1018,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "12"
+      },
+      {
+        "id": 13,
+        "date": "2023-04-18T15:47:40.4284176",
+        "price": 4.4452,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "13"
+      },
+      {
+        "id": 14,
+        "date": "2023-04-18T15:47:40.4284191",
+        "price": 0.6103,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "14"
+      },
+      {
+        "id": 15,
+        "date": "2023-04-18T15:47:40.4284205",
+        "price": 1.2979,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "15"
+      },
+      {
+        "id": 16,
+        "date": "2023-04-18T15:47:40.4284219",
+        "price": 3.4059,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "16"
+      },
+      {
+        "id": 17,
+        "date": "2023-04-18T15:47:40.4284234",
+        "price": 4.3769,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "17"
+      },
+      {
+        "id": 18,
+        "date": "2023-04-18T15:47:40.4284249",
+        "price": 0.0401,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "18"
+      },
+      {
+        "id": 19,
+        "date": "2023-04-18T15:47:40.4284262",
+        "price": 0.8712,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "19"
+      },
+      {
+        "id": 20,
+        "date": "2023-04-18T15:47:40.4284276",
+        "price": 0.0361,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "20"
+      },
+      {
+        "id": 21,
+        "date": "2023-04-18T15:47:40.428429",
+        "price": 3.4275,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "21"
+      },
+      {
+        "id": 22,
+        "date": "2023-04-18T15:47:40.4284304",
+        "price": 0.083,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "22"
+      },
+      {
+        "id": 23,
+        "date": "2023-04-18T15:47:40.4284349",
+        "price": 2.3664,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "23"
+      },
+      {
+        "id": 24,
+        "date": "2023-04-18T15:47:40.4284364",
+        "price": 1.7539,
+        "isBought": false,
+        "type": "call receipt",
+        "datails": "24"
+      },
+      {
+        "id": 25,
+        "date": "2023-04-18T15:47:40.4284378",
+        "price": 4.8388,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "25"
+      },
+      {
+        "id": 26,
+        "date": "2023-04-18T15:47:40.4284392",
+        "price": 0.9362,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "26"
+      },
+      {
+        "id": 27,
+        "date": "2023-04-18T15:47:40.4284406",
+        "price": 1.2281,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "27"
+      },
+      {
+        "id": 28,
+        "date": "2023-04-18T15:47:40.428442",
+        "price": 0.9745,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "28"
+      },
+      {
+        "id": 29,
+        "date": "2023-04-18T15:47:40.4284434",
+        "price": 0.0726,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "29"
+      },
+      {
+        "id": 30,
+        "date": "2023-04-18T15:47:40.4284448",
+        "price": 1.1359,
+        "isBought": true,
+        "type": "call receipt",
+        "datails": "30"
+      },
+      {
+        "id": 31,
+        "date": "2023-03-27T15:47:40.4284482",
+        "price": 596,
+        "isBought": true,
+        "type": "subscription receipt",
+        "datails": "1"
+      },
+      {
+        "id": 32,
+        "date": "2023-03-29T15:47:40.4284507",
+        "price": 290,
+        "isBought": true,
+        "type": "subscription receipt",
+        "datails": "2"
+      },
+      {
+        "id": 33,
+        "date": "2023-03-31T15:47:40.4284527",
+        "price": 951,
+        "isBought": true,
+        "type": "subscription receipt",
+        "datails": "3"
+      },
+      {
+        "id": 34,
+        "date": "2023-03-22T15:47:40.4284547",
+        "price": 466,
+        "isBought": true,
+        "type": "subscription receipt",
+        "datails": "4"
+      },
+      {
+        "id": 35,
+        "date": "2023-04-07T15:47:40.4284567",
+        "price": 222,
+        "isBought": true,
+        "type": "subscription receipt",
+        "datails": "5"
+      },
+      {
+        "id": 36,
+        "date": "2023-03-21T15:47:40.4284619",
+        "price": 666,
+        "isBought": true,
+        "type": "subscription receipt",
+        "datails": "6"
+      }
+    ],
+    "Calls": [
+      {
+        "id": 1,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4283881",
+        "callTime": 191,
+        "status": 2
+      },
+      {
+        "id": 2,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4283948",
+        "callTime": 330,
+        "status": 4
+      },
+      {
+        "id": 3,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4283965",
+        "callTime": 209,
+        "status": 4
+      },
+      {
+        "id": 4,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4283979",
+        "callTime": 219,
+        "status": 1
+      },
+      {
+        "id": 5,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4283994",
+        "callTime": 583,
+        "status": 1
+      },
+      {
+        "id": 6,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.428401",
+        "callTime": 580,
+        "status": 3
+      },
+      {
+        "id": 7,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284025",
+        "callTime": 451,
+        "status": 2
+      },
+      {
+        "id": 8,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284039",
+        "callTime": 422,
+        "status": 1
+      },
+      {
+        "id": 9,
+        "caller": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284054",
+        "callTime": 224,
+        "status": 2
+      },
+      {
+        "id": 10,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284069",
+        "callTime": 567,
+        "status": 4
+      },
+      {
+        "id": 11,
+        "caller": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284117",
+        "callTime": 237,
+        "status": 1
+      },
+      {
+        "id": 12,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284132",
+        "callTime": 211,
+        "status": 3
+      },
+      {
+        "id": 13,
+        "caller": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 5,
+          "name": "Emily",
+          "lastName": null,
+          "phoneNumber": 567890123,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284169",
+        "callTime": 543,
+        "status": 2
+      },
+      {
+        "id": 14,
+        "caller": {
+          "id": 5,
+          "name": "Emily",
+          "lastName": null,
+          "phoneNumber": 567890123,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284184",
+        "callTime": 104,
+        "status": 1
+      },
+      {
+        "id": 15,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284198",
+        "callTime": 76,
+        "status": 1
+      },
+      {
+        "id": 16,
+        "caller": {
+          "id": 5,
+          "name": "Emily",
+          "lastName": null,
+          "phoneNumber": 567890123,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284212",
+        "callTime": 129,
+        "status": 0
+      },
+      {
+        "id": 17,
+        "caller": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284226",
+        "callTime": 497,
+        "status": 4
+      },
+      {
+        "id": 18,
+        "caller": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284242",
+        "callTime": 268,
+        "status": 3
+      },
+      {
+        "id": 19,
+        "caller": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284256",
+        "callTime": 185,
+        "status": 4
+      },
+      {
+        "id": 20,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.428427",
+        "callTime": 350,
+        "status": 3
+      },
+      {
+        "id": 21,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284284",
+        "callTime": 157,
+        "status": 2
+      },
+      {
+        "id": 22,
+        "caller": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284298",
+        "callTime": 162,
+        "status": 4
+      },
+      {
+        "id": 23,
+        "caller": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284311",
+        "callTime": 247,
+        "status": 1
+      },
+      {
+        "id": 24,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284357",
+        "callTime": 416,
+        "status": 0
+      },
+      {
+        "id": 25,
+        "caller": {
+          "id": 5,
+          "name": "Emily",
+          "lastName": null,
+          "phoneNumber": 567890123,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 5,
+          "name": "Emily",
+          "lastName": null,
+          "phoneNumber": 567890123,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284372",
+        "callTime": 411,
+        "status": 3
+      },
+      {
+        "id": 26,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 5,
+          "name": "Emily",
+          "lastName": null,
+          "phoneNumber": 567890123,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284386",
+        "callTime": 91,
+        "status": 3
+      },
+      {
+        "id": 27,
+        "caller": {
+          "id": 3,
+          "name": "Alex",
+          "lastName": null,
+          "phoneNumber": 345678901,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.42844",
+        "callTime": 114,
+        "status": 3
+      },
+      {
+        "id": 28,
+        "caller": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284414",
+        "callTime": 519,
+        "status": 1
+      },
+      {
+        "id": 29,
+        "caller": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 2,
+          "name": "Sarah",
+          "lastName": "Smith",
+          "phoneNumber": 234567890,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284427",
+        "callTime": 480,
+        "status": 0
+      },
+      {
+        "id": 30,
+        "caller": {
+          "id": 4,
+          "name": "Mike",
+          "lastName": null,
+          "phoneNumber": 456789012,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "target": {
+          "id": 1,
+          "name": "John",
+          "lastName": null,
+          "phoneNumber": 123456789,
+          "role": 1,
+          "isBanned": false,
+          "ballance": 0
+        },
+        "callStartDate": "2023-04-18T15:47:40.4284441",
+        "callTime": 351,
+        "status": 3
+      }
+    ]
+  }
+}

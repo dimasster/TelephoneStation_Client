@@ -22,6 +22,12 @@ import { NotificationsComponent } from './pages/notifications/notifications.comp
 import { ReceiptsComponent } from './pages/receipts/receipts.component';
 import { HelpMessengerComponent } from './modals/help-messenger/help-messenger.component';
 import { AboutComponent } from './pages/about/about.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { AccountBtnComponent } from './components/account-btn/account-btn.component';
+import { BallanceComponent } from './components/ballance/ballance.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CallItemComponent } from './components/call-item/call-item.component';
+import { ReceiptComponent } from './components/receipt/receipt.component';
 
 @NgModule({
   declarations: [
@@ -42,9 +48,15 @@ import { AboutComponent } from './pages/about/about.component';
     NotificationComponent,
     NotificationsComponent,
     ReceiptsComponent,
-    HelpMessengerComponent
+    HelpMessengerComponent,
+    LogoComponent,
+    AccountBtnComponent,
+    BallanceComponent,
+    CallItemComponent,
+    ReceiptComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
@@ -58,7 +70,9 @@ import { AboutComponent } from './pages/about/about.component';
       { path: 'about', component: AboutComponent}
     ])
   ],
-  providers: [],
+  providers: [
+    HttpClient 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,1 +1,9 @@
-<p>nav-bar works!</p>
+<div class="nav-bar">
+    <a class="nav-item" [routerLink]="['/phone-book/:userId']">phone book</a>
+    <a class="nav-item" [routerLink]="['/receipts/:userId']">receipts</a>
+    <a class="nav-item" [routerLink]="['/services']">services</a>
+    <a class="nav-item" [routerLink]="['/notitications/:userId']">notifications</a>
+    <a *ngIf="!IsLoggedIn" class="nav-item" [routerLink]="['/']">log in</a>
+    <a *ngIf="IsLoggedIn" class="nav-item">log out</a>
+</div>
+

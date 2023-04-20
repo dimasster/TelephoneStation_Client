@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ContentChild, Input } from '@angular/core';
+import { Receipt } from 'src/app/models';
 
 @Component({
   selector: 'app-receipt',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./receipt.component.css']
 })
 export class ReceiptComponent {
-
+  @Input() receipt!: Receipt;
+  @ContentChild('receiptActions') receiptActions: any;
 }

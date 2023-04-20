@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ContentChild, Input } from '@angular/core';
+import { Service } from 'src/app/models';
 
 @Component({
   selector: 'app-service',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./service.component.css']
 })
 export class ServiceComponent {
-
+  @Input() service!: Service;
+  @ContentChild('serviceActions') serviceActions: any;
 }

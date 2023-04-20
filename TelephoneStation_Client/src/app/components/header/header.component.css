@@ -1,0 +1,25 @@
+.header{
+    height: 40px;
+    background-color: #c8ddf3;
+    
+    border-bottom: blue 2px solid;
+    
+    padding: 16px;
+    padding-right: 106px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+app-account-btn {
+    position: absolute;
+    right: 20px;
+}
+
+app-ballance {
+    position: absolute;
+    right: 70px;
+    cursor: pointer;
+    font-size: smaller;
+}

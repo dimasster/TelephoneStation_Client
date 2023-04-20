@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ContentChild, Input } from '@angular/core';
+
+import { User } from '../../models';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  @Input() contact!: User;
+  @ContentChild('contactActions') contactActions: any;
 
+  constructor() { }
 }

@@ -1,1 +1,15 @@
-<p>receipt works!</p>
+<div class="receipt">
+    <div class="main-content">
+        <p class="receipt-type">type: {{receipt.type}}</p>
+        <p class="receipt-details" *ngIf="receipt.details">details: {{receipt.details}}</p>
+    </div>
+    
+    <div class="additional-content">
+        <p class="receipt-date">date: {{receipt.date}}</p>
+        <p class="receipt-price">price: {{receipt.price}}₴</p>
+    </div>
+
+    <div class="actions">
+        <ng-container *ngTemplateOutlet="receiptActions"></ng-container>
+    </div>
+</div>

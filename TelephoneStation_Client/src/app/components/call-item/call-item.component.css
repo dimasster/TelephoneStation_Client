@@ -1,0 +1,44 @@
+.call-item {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.initial-status {
+    background: linear-gradient(to right, #c7def5, #c7def5 80%, #fefefe);
+}
+
+.started-status {
+    background: linear-gradient(to right, #c7def5, #c7def5 80%, #f7f78f);
+}
+
+.finished-status {
+    background: linear-gradient(to right, #c7def5, #c7def5 80%, #58f462);
+}
+
+.cancelled-status {
+    background: linear-gradient(to right, #c7def5, #c7def5 80%, #f45858);
+}
+
+.rejected-status {
+    background: linear-gradient(to right, #c7def5, #c7def5 80%, #898989);
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.additional-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
