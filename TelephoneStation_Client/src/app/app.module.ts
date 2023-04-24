@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -59,15 +62,17 @@ import { ReceiptComponent } from './components/receipt/receipt.component';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: 'phone-book/:userId', component: PhoneBookComponent },
-      { path: 'receipts/:userId', component: ReceiptsComponent },
-      { path: 'services', component: ServicesComponent},
-      { path: 'notitications/:userId', component: NotificationsComponent},
-      { path: '', component: LoginComponent},
-      { path: 'sign-up', component: SignUpComponent},
-      { path: 'account/:userId', component: AccountComponent},
-      { path: 'about', component: AboutComponent}
+      { path: 'phone-book', component: PhoneBookComponent },
+      { path: 'receipts', component: ReceiptsComponent },
+      { path: 'services', component: ServicesComponent },
+      { path: 'notitications', component: NotificationsComponent },
+      { path: '', component: LoginComponent },
+      { path: 'sign-up', component: SignUpComponent },
+      { path: 'account', component: AccountComponent },
+      { path: 'about', component: AboutComponent }
     ])
   ],
   providers: [
@@ -75,4 +80,4 @@ import { ReceiptComponent } from './components/receipt/receipt.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
