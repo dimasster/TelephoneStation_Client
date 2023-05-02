@@ -36,3 +36,25 @@ app-service {
     align-items: center;
     cursor: pointer;
 }
+
+.unsubscribe-btn {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(142, 239, 149);
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.continue-sub-btn {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(142, 239, 149);
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

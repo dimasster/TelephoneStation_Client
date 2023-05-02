@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Call, CallStatus } from 'src/app/models';
+import { Call, CallStatus } from 'src/app/common/models';
 
 @Component({
   selector: 'app-call-item',

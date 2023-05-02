@@ -1,6 +1,6 @@
 import { Component, ContentChild, Input } from '@angular/core';
 
-import { User } from '../../models';
+import { User } from '../../common/models';
 
 @Component({
   selector: 'app-contact',

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UserRole } from 'src/app/common/models';
+import { AccountService } from 'src/app/services/account.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-  IsLoggedIn = true;
+  isAdmin = true;
+  constructor(private accountService: AccountService) {
+    this.isAdmin = this.accountService.getCurrentUser().role === UserRole.Admin;
+  }
 }

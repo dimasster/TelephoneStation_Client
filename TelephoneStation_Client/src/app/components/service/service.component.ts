@@ -1,5 +1,5 @@
 import { Component, ContentChild, Input } from '@angular/core';
-import { Service } from 'src/app/models';
+import { Service } from 'src/app/common/models';
 
 @Component({
   selector: 'app-service',

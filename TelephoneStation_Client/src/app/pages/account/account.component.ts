@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Subscription, User, UserRole } from 'src/app/models';
+import { Subscription, User, UserRole } from 'src/app/common/models';
 import { AccountService } from 'src/app/services/account.service';
 import { BallanceService } from 'src/app/services/ballance.service';
+import { SubscriptionService } from 'src/app/services/subscription.service';
 
 @Component({
   selector: 'app-account',
@@ -10,17 +11,18 @@ import { BallanceService } from 'src/app/services/ballance.service';
 })
 export class AccountComponent {
   account!: User;
-  subscription: Subscription | undefined;
+  subscription!: Subscription;
   ballance!: number;
 
   constructor(
     private accountService: AccountService,
+    private subscriptionService: SubscriptionService,
     private ballanceService: BallanceService
   ) {}
 
-  ngOnInit() {
+  async ngOnInit() {
     this.account = this.accountService.getCurrentUser();
-    this.subscription = this.accountService.getCurrentSubscription();
+    this.subscription = await this.subscriptionService.getCurrentSubscription();
     this.ballance = this.ballanceService.getCurrentBallance();
   }
 

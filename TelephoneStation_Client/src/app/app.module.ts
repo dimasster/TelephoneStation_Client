@@ -65,6 +65,7 @@ import { ReceiptComponent } from './components/receipt/receipt.component';
     FontAwesomeModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: 'admin-panel', component: AdminPanelComponent },
       { path: 'phone-book', component: PhoneBookComponent },
       { path: 'receipts', component: ReceiptsComponent },
       { path: 'services', component: ServicesComponent },

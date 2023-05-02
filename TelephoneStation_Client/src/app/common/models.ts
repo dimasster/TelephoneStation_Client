@@ -41,6 +41,11 @@ export interface User {
     isBanned: boolean;
     ballance: number;
 }
+
+export interface Account {
+    login: string;
+    password: string;
+}
   
 export enum CallStatus {
     Initial = 0,
