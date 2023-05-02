@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Service } from 'src/app/models';
+import { Service } from 'src/app/common/models';
 import { ServiceService } from 'src/app/services/service.service';
+import { SubscriptionService } from 'src/app/services/subscription.service';
 
 @Component({
   selector: 'app-services',
@@ -9,17 +10,30 @@ import { ServiceService } from 'src/app/services/service.service';
 })
 export class ServicesComponent {
   services: Service[] | undefined;
+  currentService!: Service;
 
-  constructor(private serviceService: ServiceService) {}
+  constructor(
+    private serviceService: ServiceService,
+    private subService: SubscriptionService
+  ) {}
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     this.serviceService.getServices().subscribe(
-      (response) => { this.services = response.db.Services; },
-      (error) => { console.log(error); }
+      response => this.services = response,
+      error => console.log(error)
     );
+    this.currentService = (await this.subService.getCurrentSubscription()).service!;
   }
 
-  subscribe(subscribeId: number): void {
+  subscribe(serviceId: number): void {
+
+  }
+
+  unsubscribe(): void {
+
+  }
+
+  continueSubscription(): void {
 
   }
 }

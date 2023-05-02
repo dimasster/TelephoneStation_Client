@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Call } from '../models';
+import { Call } from '../common/models';
+import { AccountService } from './account.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,9 +10,13 @@ import { Call } from '../models';
 export class CallService {
   private readonly apiUrl = 'assets/fakedb.json';
 
-  constructor(private readonly http: HttpClient) { }
+  constructor(
+    private readonly http: HttpClient,
+    private accountService: AccountService
+  ) {}
 
-  public getCalls(): Observable<{ db: { Calls: Call[] } }> {
-    return this.http.get<{ db: { Calls: Call[] } }>(this.apiUrl);
+  public getCalls(): Observable<Call[]> {
+    const userId = this.accountService.getCurrentUser().id;
+    return this.http.get<Call[]>("https://localhost:32768/api/Call/" + userId);
   }
 }

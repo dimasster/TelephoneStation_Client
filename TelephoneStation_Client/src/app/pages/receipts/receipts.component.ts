@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Receipt } from 'src/app/models';
+import { Receipt } from 'src/app/common/models';
 import { ReceiptService } from 'src/app/services/receipt.service';
 
 @Component({
@@ -18,16 +18,18 @@ export class ReceiptsComponent {
 
   showAllReceipts(): void {
     this.receiptService.getReceipts().subscribe(
-      (response) => { this.receipts = response.db.Receipts; },
-      (error) => { console.log(error); }
+      response => this.receipts = response,
+      error => console.log(error)
     );
   }
 
   showUnbought(): void {
-    this.receipts = this.receipts?.filter( receipt => !receipt.isBought );
+    this.receiptService.getUnboughtReceipts().subscribe(
+      response => this.receipts = response
+    )
   }
 
   payForReceipt(receiptId: number): void {
-
+    console.log(receiptId);
   }
 }

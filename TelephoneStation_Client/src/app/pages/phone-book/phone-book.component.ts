@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Call, User } from 'src/app/models';
+import { Call, User } from 'src/app/common/models';
 import { CallService } from 'src/app/services/call.service';
 import { UserService } from 'src/app/services/user.service';
 
@@ -24,8 +24,8 @@ export class PhoneBookComponent {
   showAllUsers(): void {
     this.onContacts = true;
     this.userService.getUsers().subscribe(
-      (response) => { this.users = response.db.Users; },
-      (error) => { console.log(error); }
+      response => this.users = response,
+      error => console.log(error)
     );
   }
 
@@ -36,8 +36,8 @@ export class PhoneBookComponent {
   showCallHistory(): void {
     this.onContacts = false;
     this.callService.getCalls().subscribe(
-      (response) => { this.calls = response.db.Calls; },
-      (error) => { console.log(error); }
+      response => this.calls = response,
+      error => console.log(error)
     );
   }
 

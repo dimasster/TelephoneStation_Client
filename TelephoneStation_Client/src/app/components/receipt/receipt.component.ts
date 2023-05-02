@@ -1,5 +1,5 @@
 import { Component, ContentChild, Input } from '@angular/core';
-import { Receipt } from 'src/app/models';
+import { Receipt } from 'src/app/common/models';
 
 @Component({
   selector: 'app-receipt',

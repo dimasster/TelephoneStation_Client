@@ -1,1 +1,31 @@
-<p>login works!</p>
+<div class="log-in">
+    <div class="log-in-container">
+        <p class="title">Telephone Station</p>
+
+        <div class="log-in-div">
+            <p class="log-in-lable">Log in</p>
+            <form [formGroup]="logInForm" (ngSubmit)="onLogIn()">
+                <div class="login-div">
+                    <label for="login">
+                        Login: 
+                    </label>
+                    <input id="login" type="text" placeholder="enter login" formControlName="login">
+                </div>
+                
+                <div class="pwd-div">
+                    <label for="password">
+                        Password: 
+                    </label>
+                    <input id="password" type="password" placeholder="enter password" formControlName="password">
+                </div>
+                
+                <input class="log-in-btn" type="submit" value="Log in">
+            </form>
+        </div>
+        
+        <div class="sign-up-div">
+            <p class="sign-up-lable">Don`t have account?</p>
+            <a class="sign-up-btn" [routerLink]="['/sign-up']">Sign up</a>
+        </div>
+    </div>
+</div>

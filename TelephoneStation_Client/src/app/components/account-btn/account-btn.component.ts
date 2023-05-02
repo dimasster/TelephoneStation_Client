@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-account-btn',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./account-btn.component.css']
 })
 export class AccountBtnComponent {
-
+  userIcon = faUser;
 }

@@ -2,7 +2,9 @@
     <div class="services-list">
         <app-service *ngFor="let service of services" [service]="service">
             <ng-template #serviceActions>
-                <p class="subscribe-btn" (click)="subscribe(service.id)">Subscribe</p>
+                <p class="subscribe-btn" *ngIf="service.id !== currentService.id" (click)="subscribe(service.id)">Subscribe</p>
+                <p class="unsubscribe-btn" *ngIf="service.id === currentService.id" (click)="unsubscribe()">Unsubscribe</p>
+                <p class="continue-sub-btn" *ngIf="service.id === currentService.id" (click)="continueSubscription()">Continue</p>
             </ng-template>
         </app-service>
     </div>

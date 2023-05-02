@@ -4,6 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class BallanceService {
+  private ballance!: number;
 
-  constructor() { }
+  constructor() {
+    this.ballance = 0;
+  }
+
+  public getCurrentBallance(): number {
+    return this.ballance;
+  }
 }

@@ -1,1 +1,38 @@
-<p>account works!</p>
+<div class="account-div">
+    <div class="bann-message" *ngIf="account.isBanned">
+        <p>!!! You were banned !!!</p>
+    </div>
+    <br *ngIf="account.isBanned">
+    <p class="info-title">Ballance details</p>
+    <div class="ballance-details info-container">
+        <p>Your ballance: {{ballance}}</p>
+        <p class="refill-btn" (click)="refillBallance()">Refill</p>
+    </div>
+    <br>
+    <p class="info-title">Account details</p>
+    <div class="account-details info-container">
+        <app-contact [contact]="account">
+            <ng-template #contactActions>
+                <p class="edit-btn" (click)="editAccount()">Edit</p>
+            </ng-template>
+        </app-contact>
+        <p>Your role: {{getRoleName(account.role)}}</p>
+    </div>
+    <br>
+    <p class="info-title">Subscription details</p>
+    <div class="subscription-details info-container" *ngIf="subscription">
+        <p>You are subscribed on:</p>
+        <app-service [service]="subscription.service!">
+            <ng-template #serviceActions>
+                <p class="unsubscribe-btn" (click)="unsubscribe()">Unsubscribe</p>
+                <p class="continue-sub-btn" (click)="continueSubscription()">Continue</p>
+            </ng-template>
+        </app-service>
+        <p>From: {{subscription.subscriptionStartDate}}</p>
+        <p>To: {{subscription.subscriptionEndDate}}</p>
+    </div>
+    <div class="no-subscription info-container" *ngIf="!subscription">
+        <p>You have no subscriptions</p>
+        <p>Chose service to subscribe: <a class="service-link" [routerLink]="['/services']">→</a></p>
+    </div>
+</div>

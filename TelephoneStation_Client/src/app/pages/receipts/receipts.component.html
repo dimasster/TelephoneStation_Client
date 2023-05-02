@@ -6,7 +6,7 @@
     <div class="receipts-list">
         <app-receipt *ngFor="let receipt of receipts" [receipt]="receipt">
             <ng-template #receiptActions>
-                <p class="pay-btn" *ngIf="receipt.isBought" (click)="payForReceipt(receipt.id)">Pay</p>
+                <p class="pay-btn" *ngIf="!receipt.isBought" (click)="payForReceipt(receipt.id)">Pay</p>
             </ng-template>
         </app-receipt>
     </div>
