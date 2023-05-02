@@ -30,6 +30,6 @@ export class ReceiptsComponent {
   }
 
   payForReceipt(receiptId: number): void {
-
+    console.log(receiptId);
   }
 }

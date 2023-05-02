@@ -26,8 +26,8 @@ export interface Service {
 
 export interface Subscription {
     id: number;
-    user?: User;
-    service?: Service;
+    user: User;
+    service: Service;
     subscriptionStartDate: Date;
     subscriptionEndDate: Date;
 }

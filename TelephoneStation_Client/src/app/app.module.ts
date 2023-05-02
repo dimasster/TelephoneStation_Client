@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -31,6 +32,8 @@ import { BallanceComponent } from './components/ballance/ballance.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CallItemComponent } from './components/call-item/call-item.component';
 import { ReceiptComponent } from './components/receipt/receipt.component';
+import { SubscriptionComponent } from './modals/subscription/subscription.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -57,6 +60,7 @@ import { ReceiptComponent } from './components/receipt/receipt.component';
     BallanceComponent,
     CallItemComponent,
     ReceiptComponent,
+    SubscriptionComponent,
   ],
   imports: [
     HttpClientModule,
@@ -74,7 +78,9 @@ import { ReceiptComponent } from './components/receipt/receipt.component';
       { path: 'sign-up', component: SignUpComponent },
       { path: 'account', component: AccountComponent },
       { path: 'about', component: AboutComponent }
-    ])
+    ]),
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     HttpClient 
