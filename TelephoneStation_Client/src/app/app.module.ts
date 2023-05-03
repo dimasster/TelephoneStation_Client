@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatDialogModule } from '@angular/material/dialog';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -79,7 +78,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: 'account', component: AccountComponent },
       { path: 'about', component: AboutComponent }
     ]),
-    MatDialogModule,
     BrowserAnimationsModule,
   ],
   providers: [
