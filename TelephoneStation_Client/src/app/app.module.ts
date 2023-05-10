@@ -33,6 +33,7 @@ import { CallItemComponent } from './components/call-item/call-item.component';
 import { ReceiptComponent } from './components/receipt/receipt.component';
 import { SubscriptionComponent } from './modals/subscription/subscription.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SubscriptionComponent,
   ],
   imports: [
+    CommonModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
